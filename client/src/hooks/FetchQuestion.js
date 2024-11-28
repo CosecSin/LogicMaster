@@ -21,7 +21,7 @@ export const useFetchQestion = () => {
     (async () => {
       try {
         const [{ questions, answers, image }] = await getServerData(
-          `http://localhost:5000/api/questions`,
+          `https://logicmaster.onrender.com/api/questions`,
           (data) => data
         );
 
